@@ -15,7 +15,6 @@ body {
   background-color: var(--background-color);
 }
 
-
 /* Header and nav bar style starts */
 
 header {
@@ -58,7 +57,7 @@ header button {
 /* Footer style start */
 
 footer {
-  padding: 20px 0;
+  padding: 50px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -200,6 +199,50 @@ footer address ul li a {
 }
 
 /* Content styling end */
+
+/* form styling starts */
+form {
+  width: 60%;
+  margin: 10px auto;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+form div {
+  margin-top: 15px;
+}
+
+form label {
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+  vertical-align: top;
+}
+
+form input {
+  font-size: 18px;
+  padding: 3px;
+  width: 360px;
+}
+
+form textarea {
+  width: 360px;
+  height: 120px;
+  padding: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form p {
+  margin-left: 156px;
+}
+
+form button {
+  width: 150px;
+  margin-left: 156px;
+  padding: 5px;
+  font-size: 20px;
+}
+/* form styling ends */
 
 /* class styling */
 

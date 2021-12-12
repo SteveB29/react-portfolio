@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import About from './components/About';
 import Project from './components/Project';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
 
   const optionSelected = {
     About: <About />,
-    Project: <Project />
+    Project: <Project />,
+    Contact: <Contact />
   };
 
   return (
