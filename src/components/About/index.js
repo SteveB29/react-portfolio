@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section id="about-me" class="about-me">
+    <section id="about-me" className="about-me">
       <p>
         My name is Steven Bendrick. I graduated from the University of Connecticut with a degeree in Chemical Engineering. 
         After graduating, I found a job doing database work in the Alumni and Development department at a local nonprofit boarding school. 

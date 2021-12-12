@@ -153,7 +153,6 @@ footer address ul li a {
   width: 80%;
   margin: 0 auto;
   opacity: .75;
-  /* background-image: url(../images/primary-application.jpg); */
   border: 4px solid var(--primary-color);
   border-radius: 5px;
   display: flex;
@@ -176,6 +175,7 @@ footer address ul li a {
   border-radius: 5px;
   text-decoration: none;
   color: black;
+  background-size: cover;
 }
 
 .secondary-application:hover {
@@ -205,26 +205,6 @@ footer address ul li a {
   margin-right: 10%;
   margin-left: 2%;
 }
-/* 
-.img1 {
-  background-image: url(../images/PepWeb.png);
-  background-size: cover;
-}
-
-.img2 {
-  background-image: url(../images/run-buddy-screenshot.jpg);
-  background-size: cover;
-}
-
-.img3 {
-  background-image: url(../images/weather-dashboard.png);
-  background-size: cover;
-}
-
-.img4 {
-  background-image: url(../images/day-schedueler.png);
-  background-size: cover;
-} */
 
 /* Content styling end */
 
