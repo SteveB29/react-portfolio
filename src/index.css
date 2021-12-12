@@ -103,7 +103,6 @@ footer address ul li a {
 .hero {
   height: 200px;
   width: 100%;
-  /* background-image: url(../images/hero-background.jpg); */
   background-size: cover;
   background-position: center;
   display: flex;
