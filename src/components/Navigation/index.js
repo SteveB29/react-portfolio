@@ -25,15 +25,18 @@ function Navigation(props) {
   ]
 
   return (
-    <nav>
-      <ul>
-        {navCategories.map(cat => (
-          <li>
-            <button onClick={() => setCurrentCategory(cat.comp)}>{cat.display}</button>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <header>
+      <h1>Steve Bendrick</h1>
+      <nav>
+        <ul>
+          {navCategories.map(cat => (
+            <li>
+              <button onClick={() => setCurrentCategory(cat.comp)}>{cat.display}</button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   )
 }
 

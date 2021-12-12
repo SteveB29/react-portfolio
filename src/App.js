@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
+import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Header
+      <Navigation
         setCurrentCategory={setCurrentCategory}
       />
       <Hero />
