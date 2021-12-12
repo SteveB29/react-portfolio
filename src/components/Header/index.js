@@ -1,11 +1,17 @@
 import React from "react";
 import Navigation from "../Navigation";
 
-function Header() {
+function Header(props) {
+  const {
+    setCurrentCategory
+  } = props
+
   return (
     <header>
         <h1>Steve Bendrick</h1>
-        <Navigation />
+        <Navigation
+          setCurrentCategory={setCurrentCategory}
+        />
     </header>
   )
 }

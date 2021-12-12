@@ -1,21 +1,37 @@
 import React from "react";
 
-function Navigation() {
+function Navigation(props) {
+  const {
+    setCurrentCategory
+  } = props
+
+  const navCategories = [
+    {
+      display: 'About Me',
+      comp: 'About'
+    },
+    {
+      display: 'Work',
+      comp: 'Project'
+    },
+    {
+      display: 'Contact Me',
+      comp: 'Contact'
+    },
+    {
+      display: 'Resume',
+      comp: 'Resume'
+    }
+  ]
+
   return (
     <nav>
       <ul>
-        <li>
-            <a href="#about-me">About Me</a>
-        </li>
-        <li>
-            <a href="#work">Work</a>
-        </li>
-        <li>
-            <a href="#contact-me">Contact Me</a>
-        </li>
-        <li>
-            <a href="./assets/Resume/Steven-Bendrick-Resume.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
-        </li>
+        {navCategories.map(cat => (
+          <li>
+            <button onClick={() => setCurrentCategory(cat.comp)}>{cat.display}</button>
+          </li>
+        ))}
       </ul>
     </nav>
   )
