@@ -121,11 +121,12 @@ footer address ul li a {
 /* Content styling start*/
 
 .about-me {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0 auto 15px auto;
   width: 65%;
+}
+
+.about-me img {
+  margin-bottom: 15px;
 }
 
 .work {
