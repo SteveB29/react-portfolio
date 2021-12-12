@@ -1,13 +1,279 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --contrast-color: #CEB992;
+  --background-color: #EFE8DC;
+  --primary-color: #471323;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--background-color);
+}
+
+
+/* Header and nav bar style starts */
+
+header {
+  padding: 20px 0;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  padding: 0 10px 0 50px;
+  font-size: 36px;
+  color: var(--primary-color);
+  background-color: var(--contrast-color);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--contrast-color);
+}
+
+header nav {
+  margin: 7px 15px 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-size: 24px;
+}
+
+/* Header and nav bar style ends */
+
+/* Footer style start */
+
+footer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer address {
+  margin: auto;
+  width: 85%;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+footer address ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+footer address ul li {
+  margin-bottom: 15px;
+}
+
+footer address ul li a {
+  padding-bottom: 3px;
+  font-size: 20px;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+/* Footer style ends */
+
+/* hero styling start */
+
+.hero {
+  height: 200px;
+  width: 100%;
+  /* background-image: url(../images/hero-background.jpg); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 50px 25px 0;
+}
+
+.hero p {
+  background-color: var(--contrast-color);
+  color: var(--primary-color);
+  height: 45px;
+  font-size: 36px;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+/* Hero styling end */
+
+/* Content styling start*/
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.about-me p {
+  margin: 15px auto 0 auto;
+  width: 75%;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.applications {
+  height: auto;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.primary-application {
+  display: block;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  opacity: .75;
+  /* background-image: url(../images/primary-application.jpg); */
+  border: 4px solid var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  color: black;
+}
+
+.primary-application:hover {
+  opacity: 1;
+}
+
+.secondary-application {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  opacity: .75;
+  margin: 25px;
+  border: 4px solid var(--primary-color);
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.secondary-application:hover {
+  opacity: 1;
+}
+
+.app-tag {
+  background-color: var(--contrast-color);
+  font-size: 12px;
+  text-align: left;
+  border: 2px solid var(--primary-color);
+  border-left: 0;
+  padding: 2px 5px;
+  margin-bottom: 5%;
+}
+
+.float-left {
+  float: left;
+  width: 38%;
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+.float-right {
+  float: right;
+  width: 38%;
+  margin-right: 10%;
+  margin-left: 2%;
+}
+/* 
+.img1 {
+  background-image: url(../images/PepWeb.png);
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url(../images/run-buddy-screenshot.jpg);
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url(../images/weather-dashboard.png);
+  background-size: cover;
+}
+
+.img4 {
+  background-image: url(../images/day-schedueler.png);
+  background-size: cover;
+} */
+
+/* Content styling end */
+
+/* class styling */
+
+.section-title {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 32px;
+  text-align: right;
+  border-right: 4px solid var(--primary-color);
+  padding-right: 5px;
+  width: 250px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1244px) {
+  .work {
+      display: flex;
+      flex-flow: wrap column;
+  }
+
+  .primary-application {
+      height: 250px;
+      background-size: cover;
+  }
+  
+  .secondary-block {
+      display: flex;
+      flex-flow: wrap column;
+  }
+
+  .float-left, .float-right {
+      float: none;
+      width: 80%;
+      margin: 5px auto;
+  }
+
+  .section-title {
+      border-right: none;
+      border-bottom: 4px solid var(--primary-color);
+      text-align: center;
+      margin: 0 auto 15px auto;
+      width: 80%;
+  }
+
+  .section-title h2 {
+      text-align: center;
+  }
 }
