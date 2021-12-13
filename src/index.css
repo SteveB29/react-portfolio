@@ -116,7 +116,7 @@ footer address ul li a {
   font-weight: bold;
 }
 
-h2 {
+.component-header {
   width: 65%;
   margin: 0 auto 25px auto;
   color: var(--primary-color);
@@ -210,7 +210,7 @@ h2 {
 
 /* form styling starts */
 form {
-  width: 60%;
+  width: 65%;
   margin: 10px auto;
   font-size: 20px;
   color: var(--primary-color);

@@ -31,7 +31,7 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       />
       <Hero />
-      <h2>{optionSelected[currentCategory].display}</h2>
+      <h2 className='component-header'>{optionSelected[currentCategory].display}</h2>
       {optionSelected[currentCategory].component}
       <Footer />
     </>
