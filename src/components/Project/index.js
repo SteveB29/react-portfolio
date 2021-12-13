@@ -36,6 +36,20 @@ function Project() {
       link: 'https://steveb29.github.io/work-day-scheduler/',
       image: '/images/day-scheduler.png',
       align: 'right'
+    },
+    {
+      name: 'Regex Gist',
+      languages: 'MD',
+      link: 'https://gist.github.com/SteveB29/b4109f656c16394c2a077eb3cff7b393',
+      image: '/images/regex-gist.png',
+      align: 'left'
+    },
+    {
+      name: 'Offline Expense Tracker',
+      languages: 'JavaScript',
+      link: 'https://lit-castle-17417.herokuapp.com/',
+      image: '/images/travel-expenses.PNG',
+      align: 'right'
     }
   ]
 
