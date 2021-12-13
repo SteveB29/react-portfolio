@@ -210,6 +210,25 @@ footer address ul li a {
   margin-left: 2%;
 }
 
+.resume {
+  width: 65%;
+  margin: 0 auto;
+  color: var(--primary-color);
+}
+
+.resume a {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.resume h2, .resume h3, .resume ul {
+  margin-bottom: 8px;
+}
+
+.resume li {
+  margin: 0 0 8px 20px;
+}
+
 /* Content styling end */
 
 /* form styling starts */

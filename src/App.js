@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
 
@@ -22,6 +23,10 @@ function App() {
     Contact: {
       component: <Contact />,
       display: 'Contact me'
+    },
+    Resume: {
+      component: <Resume />,
+      display: 'Resume'
     }
   };
 
