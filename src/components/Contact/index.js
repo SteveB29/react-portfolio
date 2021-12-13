@@ -29,8 +29,13 @@ function Contact() {
     }
   };
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert('Please use the email at the bottom of this screen, message via form coming soon!');
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="Name">Name:</label>
         <input type="text" defaultValue={name} onBlur={handleChange} name="Name" />
