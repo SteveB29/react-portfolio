@@ -116,6 +116,13 @@ footer address ul li a {
   font-weight: bold;
 }
 
+h2 {
+  width: 65%;
+  margin: 0 auto 25px auto;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
 /* Hero styling end */
 
 /* Content styling start*/

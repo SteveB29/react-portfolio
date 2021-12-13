@@ -11,9 +11,18 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState('About')
 
   const optionSelected = {
-    About: <About />,
-    Project: <Project />,
-    Contact: <Contact />
+    About: {
+      component: <About />,
+      display: 'About Me'
+    },
+    Project: {
+      component: <Project />,
+      display: 'My work'
+    },
+    Contact: {
+      component: <Contact />,
+      display: 'Contact me'
+    }
   };
 
   return (
@@ -22,7 +31,8 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       />
       <Hero />
-      {optionSelected[currentCategory]}
+      <h2>{optionSelected[currentCategory].display}</h2>
+      {optionSelected[currentCategory].component}
       <Footer />
     </>
   );
