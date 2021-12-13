@@ -2,7 +2,8 @@ import React from "react";
 
 function Navigation(props) {
   const {
-    setCurrentCategory
+    setCurrentCategory,
+    currentCategory
   } = props
 
   const navCategories = [
@@ -30,8 +31,12 @@ function Navigation(props) {
       <nav>
         <ul>
           {navCategories.map(cat => (
-            <li>
-              <button onClick={() => setCurrentCategory(cat.comp)}>{cat.display}</button>
+            <li key={cat.comp}>
+              <button
+              className={`${cat.comp === currentCategory && 'navActive'}`}
+              onClick={() => setCurrentCategory(cat.comp)}>
+                {cat.display}
+              </button>
             </li>
           ))}
         </ul>

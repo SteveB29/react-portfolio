@@ -29,6 +29,7 @@ function App() {
     <>
       <Navigation
         setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
       />
       <Hero />
       <h2 className='component-header'>{optionSelected[currentCategory].display}</h2>
