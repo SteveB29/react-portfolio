@@ -196,6 +196,23 @@ footer address ul li a {
   margin-bottom: 5%;
 }
 
+.app-tag a {
+  color: black;
+}
+
+.app-tag p {
+  margin: 2px 0;
+}
+
+.app-link {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.app-github {
+  font-size: 14px;
+}
+
 .float-left {
   float: left;
   width: 38%;
