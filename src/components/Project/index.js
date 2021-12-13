@@ -1,6 +1,7 @@
 import React from "react";
 
 function Project() {
+  // primary application that will be spotlighted at the top
   const primaryProject = {
     name: 'MovieFoodie',
     languages: 'HTML/CSS/JS',
@@ -8,6 +9,7 @@ function Project() {
     image: '/images/movie-foodie.jpg'
   }
 
+  // project array to map into the secondary applications div
   const secondaryProjects = [
     {
       name: 'PepWeb',
@@ -59,7 +61,7 @@ function Project() {
       <div className="applications">
 
         <a href={primaryProject.link}
-        target="_blank" className="primary-application"
+        target="_blank" rel="noreferrer noopener" className="primary-application"
         style={{ backgroundImage: `url(${primaryProject.image})` }}>
           <div className="app-tag">
             <h2>{primaryProject.name}</h2>
@@ -69,7 +71,7 @@ function Project() {
 
         <div className="secondary-block">
           {secondaryProjects.map(project => (
-            <a href={project.link} target="_blank"
+            <a href={project.link} target="_blank" rel="noreferrer noopener"
             className={`secondary-application float-${project.align}`}
             style={{ backgroundImage: `url(${project.image})` }}
             key={project.name}>

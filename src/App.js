@@ -9,8 +9,10 @@ import Resume from './components/Resume';
 
 function App() {
 
+  // useState setup to control what component is showing on the page
   const [currentCategory, setCurrentCategory] = useState('About')
 
+  // options for different components
   const optionSelected = {
     About: {
       component: <About />,

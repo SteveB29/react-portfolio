@@ -1,11 +1,14 @@
 import React from "react";
 
 function Navigation(props) {
+  // destructure the pros from App.js
   const {
     setCurrentCategory,
     currentCategory
   } = props
 
+  // the categories in the navigation used to set what is displayed
+  // seems inefficient, possibly can be combined with optionSelected in App.js
   const navCategories = [
     {
       display: 'About Me',
