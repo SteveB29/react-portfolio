@@ -3,11 +3,11 @@ import React from "react";
 function Project() {
   // primary application that will be spotlighted at the top
   const primaryProject = {
-    name: 'MovieFoodie',
-    languages: 'HTML/CSS/JS',
-    link: 'https://michellewehr.github.io/MovieFoodie/',
-    image: './images/movie-foodie.jpg',
-    github: 'https://github.com/michellewehr/MovieFoodie'
+    name: 'TravelTribe',
+    languages: 'MERN / Chakra UI',
+    link: 'https://traveltribe.herokuapp.com/Dashboard',
+    image: './images/traveltribe.png',
+    github: 'https://github.com/JessicaLDaley/TripTribe'
   }
 
   // project array to map into the secondary applications div
@@ -21,12 +21,12 @@ function Project() {
       github: 'https://github.com/JessicaLDaley/PepWeb'
     },
     {
-      name: 'Run-Buddy',
-      languages: 'HTML / CSS',
-      link: 'https://steveb29.github.io/run-buddy/',
-      image: './images/run-buddy-screenshot.jpg',
+      name: 'MovieFoodie',
+      languages: 'HTML/CSS/JS',
+      link: 'https://michellewehr.github.io/MovieFoodie/',
+      image: './images/movie-foodie.jpg',
       align: 'right',
-      github: 'https://github.com/SteveB29/run-buddy'
+      github: 'https://github.com/michellewehr/MovieFoodie'
     },
     {
       name: 'Weather report',
@@ -59,6 +59,14 @@ function Project() {
       image: './images/travel-expenses.PNG',
       align: 'right',
       github: 'https://github.com/SteveB29/offline-travel-expenses'
+    },
+    {
+      name: 'Run-Buddy',
+      languages: 'HTML / CSS',
+      link: 'https://steveb29.github.io/run-buddy/',
+      image: './images/run-buddy-screenshot.jpg',
+      align: 'left',
+      github: 'https://github.com/SteveB29/run-buddy'
     }
   ]
 
