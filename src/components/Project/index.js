@@ -5,7 +5,7 @@ function Project() {
   const primaryProject = {
     name: 'TravelTribe',
     languages: 'MERN / Chakra UI',
-    link: 'https://traveltribe.herokuapp.com/Dashboard',
+    link: 'https://traveltribe.herokuapp.com',
     image: './images/traveltribe.png',
     github: 'https://github.com/JessicaLDaley/TripTribe'
   }

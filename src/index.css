@@ -163,6 +163,7 @@ footer address ul li a {
   align-items: flex-end;
   text-decoration: none;
   color: black;
+  background-size: cover;
 }
 
 .primary-application:hover {
